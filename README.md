@@ -1,1 +1,2 @@
-# Portfolio
+# Portfolio Website
+Welcome to my portfolio website! Here, you can find a showcase of my coding projects and learn more about me through my about page. Additionally, you can find links to my LinkedIn, Instagram, and email so you can connect with me. Thank you for visiting!
