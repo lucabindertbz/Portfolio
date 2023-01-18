@@ -3,9 +3,9 @@
     <main class="main main--project">
         <div>
             <img
-                class="hero"
-                src="{{ url_for('static', filename=project['hero']) }}"
-                alt="A hand holding a pen, about to write something in a project planner."
+                    class="hero"
+                    src="{{ url_for('static', filename=project['hero']) }}"
+                    alt="A hand holding a pen, about to write something in a project planner."
             />
 
             <article class="project">
@@ -13,15 +13,19 @@
                     <h2 class="project__heading">{{ project['name'] }}</h2>
 
                     <p>
-                        Hi, I'm Bob! I love helping students learn to code and master software development.
-                        I've been teaching online for over 6 years, and I founded Teclado to bring software
-                        development to everyone—my objective is for you to truly understand everything
-                        that goes on behind the scenes.
+                        This project is a Flask application that allows users to track their habits. It includes routes
+                        for the home page, adding a habit, and marking a habit as complete.
                     </p>
                     <p>
-                        Coding is extremely rewarding. As you learn, things start to click and make sense.
-                        You can join the dots of all the things that weren't quite clear before.
-                        I'm here to make that journey quick and painless!
+                        The home page shows a list
+                        of habits and allows the user to select a date to view habits for that day. The add a habit page
+                        allows the user to add a new habit and the complete page allows the user to mark a habit as
+                        complete for a specific date.
+                    </p>
+                    <p>
+                        The code uses the datetime, uuid, and Flask libraries and uses a
+                        MongoDB database to store information about habits and completions. The context processor
+                        function date_range is used to calculate the date range.
                     </p>
                 </article>
 
