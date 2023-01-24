@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main class="main main--project">
+        <div>
+{#            <img#}
+{#                    class="hero",#}
+{#                    src="{{ url_for('static', filename=project['hero']) }}"#}
+{#                    alt="A hand holding a pen, about to write something in a project planner."#}
+{#            />#}
+
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+
+                    <p>
+                        This website is a platform for individuals to share their thoughts and ideas with others. It is
+                        programmed using a combination of the Flask framework and MongoDB database.
+                    </p>
+
+
+                    <p>
+                        The Flask framework is a tool that helps create the structure and layout of the website. It
+                        allows for easy handling of user input and communication with the database. MongoDB is a type of
+                        database that stores data in a format that is not based on tables or rows, which is perfect for
+                        storing unstructured data like blog entries.
+                    </p>
+                    <p>
+                        When a user accesses the website, they can post an anonymous entry by filling out a form. The
+                        website will then store the entry in the MongoDB database, so that other users can view and read
+                        it
+                    </p>
+                    <p>
+                        This website is a place where people can come to share their thoughts, ideas and experiences
+                        with others. The website is designed and built with technical tools like Flask and MongoDB to
+                        make it easy to use and manage the data.
+                    </p>
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                        <ul class="technology-list">
+                            <li class="technology-list__item">Python</li>
+                            <li class="technology-list__item">Flask</li>
+                            <li class="technology-list__item">HTML</li>
+                            <li class="technology-list__item">CSS</li>
+                        </ul>
+                    </article>
+
+                    <a class="cta" href="{{ project['prod'] }}">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        View in production
+                    </a>
+                </section>
+            </article>
+        </div>
+    </main>
+{% endblock %}
